@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -35,9 +35,28 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 960px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 32px 24px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 1160px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.embed-card iframe {
+    width: 100%;
+    height: 167px;
+    border: 0;
+    display: block;
 }
 
 .logo {
